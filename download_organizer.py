@@ -1,6 +1,6 @@
 import os, shutil, time
 
-src = r"C:\Users\meths\Downloads"
+src = os.path.join(os.path.expanduser("~"), "Downloads")
 
 dest_map = {
     ".jpg": "Images",
@@ -8,7 +8,6 @@ dest_map = {
     ".mp4": "Videos",
     ".pdf": "Documents",
     ".zip": "Archives",
-    ".docx": "Documents",
     ".xlsx": "Excel Documents",   
     ".mp3": "Music",
     ".txt": "Documents",
